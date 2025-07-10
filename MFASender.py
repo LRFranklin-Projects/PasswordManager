@@ -19,9 +19,9 @@ def email_alert(to_Email) -> str:
     msg['subject'] = subject # Setting the subject of the email message
     msg['to'] = to_Email # Setting the receiver of the email message
 
-    user = "python.tempcode.alert@gmail.com" # The gmail sending the email
+    user = "insert email to send from" # The gmail sending the email
     msg['from'] = user # Setting the gmail to send the email message
-    password = "gbef slgk ycav smui" # Password created through: myaccount.google.com/apppasswords
+    password = "insert app password here" # Password created through: myaccount.google.com/apppasswords
 
     server = smtplib.SMTP("smtp.gmail.com", 587) # Create an SMTP server object for GMAIL and on port 587
     server.starttls() # Put the SMTP connection in TLS mode for secure communication
